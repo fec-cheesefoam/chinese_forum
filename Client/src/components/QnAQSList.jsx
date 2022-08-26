@@ -6,22 +6,11 @@ class QnAList extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-<<<<<<< HEAD
       showAnsModal: false,
       numAns: 2,
       reported: this.props.qnaSet.reported,
       qshelpfulness: 0 || this.props.qnaSet.question_helpfulness,
       ans: this.props.qnaSet.answers
-=======
-      qsid: this.props.qnaSet.question_id,
-      qs: this.props.qnaSet.question_body,
-      date: this.props.qnaSet.question_date,
-      ans: this.props.qnaSet.answers,
-      showAnsModal: false,
-      qshelpful: this.props.qnaSet.question_helpfulness,
-      qsreported: this.props.qnaSet.reported,
-      numAns: 2
->>>>>>> Updated Connections and QnA Component
     }
     this.qsid = this.props.qnaSet.question_id
     this.qs = this.props.qnaSet.question_body
@@ -102,7 +91,6 @@ class QnAList extends React.Component {
   }
 
   render(){
-<<<<<<< HEAD
     let AnsList
     if(Object.keys(this.state.ans).length>0){
       AnsList = Object.keys(this.state.ans).slice(0,this.state.numAns).map(ansId =>
@@ -110,19 +98,6 @@ class QnAList extends React.Component {
       )
     }
 
-=======
-    let AnsList;
-    // if(Object.keys(this.state.ans).length>0){
-    //   AnsList =
-    //   <a><b>A: </b></a>
-    //   {this.state.ans.slice(0,this.state.numAns).map(ans => {
-    //     <QnAAnsList ans = {ans}/>
-    //   })}
-    // <p class = "lvl4" onClick = {this.loadAns}><b>LOAD MORE ANSWERS</b></p>
-    // } else {
-    //   AnsList =<></>
-    // }
->>>>>>> Updated Connections and QnA Component
     return (
       <div>
         <td>
@@ -147,11 +122,8 @@ class QnAList extends React.Component {
         </div><br/>
         {AnsList}
         <br/>
-<<<<<<< HEAD
         </td>
         <button class = "lvl4" onClick = {this.loadAns}>LOAD MORE ANSWERS</button><br/><br/>
-=======
->>>>>>> Updated Connections and QnA Component
     </div>
     )
   }

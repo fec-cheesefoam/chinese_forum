@@ -28,11 +28,7 @@ class QnA extends React.Component {
         this.setState({
           qna: result.data
         })
-<<<<<<< HEAD
         console.log(result.data);
-=======
-        //console.log(result.data);
->>>>>>> Updated Connections and QnA Component
       }).catch(err => {
         console.log(err)
       })
