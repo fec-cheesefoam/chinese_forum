@@ -1,4 +1,4 @@
-RPP-2204 FEC Project Atelier
+Project Atelier
 
 Overview
 This project produces the front end interface for a general product page of the web based marketplace Atelier. The four main components of the Atelier marketplace are Product Overview, Related Products, Question and Answers, and Reviews. The tech stack used is React Framework with Node.js for front end and an unknown backend created by Hackreactor. It will be hosted on AWS EC2.
